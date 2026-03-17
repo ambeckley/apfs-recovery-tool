@@ -82,21 +82,6 @@ python3 test_c_encrypted_vs_unencrypted.py
 python3 test_c_200mb_keep.py
 ```
 
-## Project Structure
-
-| File | Description |
-|------|-------------|
-| `apfs_recover.c` | C implementation (~3400 lines) |
-| `apfs_recover.py` | Python CLI entry point |
-| `directory_reconstructor.py` | Python unencrypted recovery module |
-| `encrypted_recovery.py` | Python encrypted recovery module |
-| `damage_simulator.py` | 35 corruption types for testing |
-| `create_encrypted_image.py` | Creates encrypted/unencrypted APFS test images |
-| `test_c_encrypted_vs_unencrypted.py` | Encrypted vs unencrypted comparison test |
-| `test_python_vs_c.py` | Python vs C cross-validation test |
-| `test_c_200mb_keep.py` | 200MB test that preserves artifacts |
-| `Makefile` | Build configuration |
-
 ## How It Works
 
 1. **Find the container** — parse GPT or scan for NXSB magic to locate the APFS partition
