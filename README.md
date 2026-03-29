@@ -78,8 +78,6 @@ python3 test_python_vs_c.py
 # Compare encrypted vs unencrypted recovery (C implementation)
 python3 test_c_encrypted_vs_unencrypted.py
 
-# 200MB test that keeps all damaged images and recovered files for inspection
-python3 test_c_200mb_keep.py
 ```
 
 ## How It Works
